@@ -37,23 +37,24 @@ function saveApplicant(){
 }
 
 function validateInput(forminput) {
-  $(forminput).removeClass("border-fail")
-  $(forminput).removeClass("border-succes")
+  $(forminput).removeClass("border-fail");
+  $(forminput).removeClass("border-succes");
   if ($(forminput).val() === "") {
     $(forminput).addClass("border-fail");
     $("<p class='text-fail'>Favor de llenar el campo</p>").insertAfter(forminput);
     return false;
   } else {
     $(forminput).addClass("border-success")
-    document.querySelectorAll(".text-fail").forEach(function(element){
-        element.remove();
-    });
     return $(forminput).val();
   }
  }
 
 
  function validateFormApplicant(){
+  document.querySelectorAll(".text-fail").forEach(function(element){
+    console.log(element);
+      element.parentNode.removeChild(element);
+  });
   let inputName = validateInput("#inputName");
   let inputPhone =validateInput("#inputPhone");
   let inputAddress =validateInput("#inputAddress");
@@ -62,6 +63,11 @@ function validateInput(forminput) {
 
 
  function validateFormAddPets(){
+  document.querySelectorAll(".text-fail").forEach(function(element){
+    console.log(element);
+      element.parentNode.removeChild(element);
+  });
+
   let inputName = validateInput("#inputNombre");
   let inputBreed =validateInput("#inputRaza");
   let inputImage =validateInput("#inputURL");
