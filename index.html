@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Kode Friend</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalCenterTitle">Mascota Ingresada!!!</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<p>Gracias por haber ingresado una mascota en adoptción!!</p>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Aceptar</button>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Adopción</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+							<label for="inputName">Nombre del adoptante</label>
+							<input type="text" class="form-control" id="inputName" placeholder="Ingrese el nombre del adoptante">
+							</div>
+							<div class="form-group">
+							<label for="inputPhone">Teléfono</label>
+							<input type="text" class="form-control" id="inputPhone" placeholder="555-555-5555">
+							</div>
+							<div class="form-group">
+								<label for="inputAddress">Dirección</label>
+								<input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
+							</div>
+							<fieldset disabled>                
+							<div class="form-group">
+								<label for="inputIdPet">ID Mascota</label>
+								<input type="text" class="form-control" id="inputIdPet" placeholder="ID Mascota">
+							</div>
+							</fieldset>
+						</form>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					<button id="btn-solicitante" type="button" class="btn btn-primary" data-dismiss="modal">Solicitar</button>
+					</div>
+				</div>
+				</div>
+			</div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex">
+			<a class="navbar-brand" id="principal" href="#">Kode Friend</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ml-auto">
+					<a class="nav-item nav-link active" href="#" id="adopta" >Adopta <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="#" id="sugiere">Sugiere</a>
+				</div>
+			</div>
+		</nav>
+		<div class="container-adopcion">
+		</div>
+		<footer class="p-5 d-flex justify-content-between">
+			<p class="copyright text-dark">©Kodemia 2019 All Rights Reserved</p>
+		</footer>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

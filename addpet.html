@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-3">
+        </div>
+        <div class="col-6">
+            <form id= "formpets" onsubmit = "addPetDB();" class="shadow p-3 mb-5 bg-white rounded needs-validation" novalidate>
+                <h3 class="text-center">Sugerir Mascotas</h5>
+                <div class="form-group">
+                    <label for="inputNombre">Nombre Mascota</label>
+                    <input type="text" class="form-control" id="inputNombre"placeholder="Ingresa nombre de la mascota" requieres>
+                    <div class="invalid-feedback">
+                        Por favor ingrese el nombre de la mascota.
+                    </div>                    
+                </div>
+                <div class="form-group">
+                    <label for="inputRaza">Raza</label>
+                    <input type="text" class="form-control" id="inputRaza"placeholder="Ingresa nombre de la mascota" >
+                </div>                
+                <div class="form-group">
+                    <label for="inputURL">Url imagen</label>
+                    <input type="text" class="form-control" id="inputURL" placeholder="Ingresa la url de la foto de la mascota" >
+                </div>
+                <div class="form-group">
+                    <label for="inputDescripcion">Descripción</label>
+                    <textarea id="inputDescripcion" class="md-textarea form-control" rows="3" ></textarea>
+                </div>
+                <button id="submit" type="submit" class="btn btn-primary submit">Submit</button>
+            </form>                        
+        </div>
+        <div class="col-3">
+
+        </div>
+    </div>
+
+</div>
