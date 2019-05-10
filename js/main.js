@@ -41,7 +41,7 @@ function validateInput(forminput) {
   $(forminput).removeClass("border-succes");
   if ($(forminput).val() === "") {
     $(forminput).addClass("border-fail");
-    $("<p class='text-fail'>Favor de llenar el campo</p>").insertAfter(forminput);
+    $("<p class='text-fail animated shake' style='color:red;''>Favor de llenar el campo</p>").insertAfter(forminput);
     return false;
   } else {
     $(forminput).addClass("border-success")
