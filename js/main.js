@@ -40,14 +40,14 @@ function validateInput(forminput) {
   $(forminput).removeClass("border-fail")
   $(forminput).removeClass("border-succes")
   if ($(forminput).val() === "") {
-    $(forminput).addClass("border-fail")
-    //$("<p>Campo es obligatorio</p>").insertAfter(forminput);
+    $(forminput).addClass("border-fail");
+    $("<p class='text-fail'>Favor de llenar el campo</p>").insertAfter(forminput);
     return false;
   } else {
     $(forminput).addClass("border-success")
-    let textMes = document.getElementById(`text-${forminput}`);
-    if(textMes)
-      textMes.innerHTML ="";
+    document.querySelectorAll(".text-fail").forEach(function(element){
+        element.remove();
+    });
     return $(forminput).val();
   }
  }
